@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: capstone2026
   profiles:
     active: local # 기본값
   # [공통 설정] 모든 프로필에서 공통으로 사용하는 정보
@@ -24,8 +22,6 @@ spring:
       on-profile: local
   datasource:
     url: jdbc:mariadb://localhost:3336/user_db
-server:
-  port: 8081 # 8080은 docker yj-backend 컨테이너가 점유 중
 
 ---
 # 2. 도커 배포용
